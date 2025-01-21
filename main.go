@@ -21,9 +21,7 @@ func main() {
 	fmt.Print("Masukkan sebuah string: ")
 	input, _ := reader.ReadString('\n')
 
-	// Menghapus karakter newline atau spasi di akhir input
 	input = strings.TrimSpace(input)
-
 	reversed := reverseString(input)
 	fmt.Println("String asli: ", input)
 	fmt.Println("String terbalik: ", reversed)
